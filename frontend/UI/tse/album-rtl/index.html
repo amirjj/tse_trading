@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -11,276 +11,236 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album-rtl/">
 
     <link href="../assets/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+    <link href="../bbcfont.css" rel="stylesheet">
 
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+    <!--    <style>-->
+    <!--      .bd-placeholder-img {-->
+    <!--        font-size: 1.125rem;-->
+    <!--        text-anchor: middle;-->
+    <!--        -webkit-user-select: none;-->
+    <!--        -moz-user-select: none;-->
+    <!--        user-select: none;-->
+    <!--      }-->
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+    <!--      @media (min-width: 768px) {-->
+    <!--        .bd-placeholder-img-lg {-->
+    <!--          font-size: 3.5rem;-->
+    <!--        }-->
+    <!--      }-->
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+    <!--      .b-example-divider {-->
+    <!--        height: 3rem;-->
+    <!--        background-color: rgba(0, 0, 0, .1);-->
+    <!--        border: solid rgba(0, 0, 0, .15);-->
+    <!--        border-width: 1px 0;-->
+    <!--        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);-->
+    <!--      }-->
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+    <!--      .b-example-vr {-->
+    <!--        flex-shrink: 0;-->
+    <!--        width: 1.5rem;-->
+    <!--        height: 100vh;-->
+    <!--      }-->
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-    </style>
-  </head>
-  <body>
+    <!--      .bi {-->
+    <!--        vertical-align: -.125em;-->
+    <!--        fill: currentColor;-->
+    <!--      }-->
+
+    <!--      .nav-scroller {-->
+    <!--        position: relative;-->
+    <!--        z-index: 2;-->
+    <!--        height: 2.75rem;-->
+    <!--        overflow-y: hidden;-->
+    <!--      }-->
+
+    <!--      .nav-scroller .nav {-->
+    <!--        display: flex;-->
+    <!--        flex-wrap: nowrap;-->
+    <!--        padding-bottom: 1rem;-->
+    <!--        margin-top: -1px;-->
+    <!--        overflow-x: auto;-->
+    <!--        text-align: center;-->
+    <!--        white-space: nowrap;-->
+    <!--        -webkit-overflow-scrolling: touch;-->
+    <!--      }-->
+    <!--    </style>-->
+</head>
+<body>
 <header>
-  <div class="navbar navbar-dark shadow-sm navbar-expand bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="../assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="d-inline-block align-top" alt="Bootstrap" loading="lazy">
-      </a>
-      <div class="d-flex collapse navbar-collapse" id="navbarSupportedContent2">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">خانه</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">دیدبان</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">فیلتر</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">نمودار</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">پول داغ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">سابقه</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">سهامدار عمده</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">بنیادی</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">صنایع</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">کدال</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">پیام ناظر</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">خدمات</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">لینک</a>
-          </li>
+    <div class="navbar navbar-dark shadow-sm navbar-expand bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="d-inline-block align-top" alt="Bootstrap" loading="lazy">
+            </a>
+            <div class="d-flex collapse navbar-collapse" id="navbarSupportedContent2">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">خانه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">دیدبان</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">فیلتر</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">نمودار</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">پول داغ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">سابقه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">سهامدار عمده</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">بنیادی</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">صنایع</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">کدال</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">پیام ناظر</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">خدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">لینک</a>
+                    </li>
 
-<!--          <li class="nav-item dropdown">-->
-<!--            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--              قائمة منسدلة-->
-<!--            </a>-->
-<!--            <ul class="dropdown-menu">-->
-<!--              <li><a class="dropdown-item" href="#">عمل</a></li>-->
-<!--              <li><a class="dropdown-item" href="#">عمل آخر</a></li>-->
-<!--              <li><hr class="dropdown-divider"></li>-->
-<!--              <li><a class="dropdown-item" href="#">شيء آخر هنا</a></li>-->
-<!--            </ul>-->
-<!--          </li>-->
-<!--          <li class="nav-item">-->
-<!--            <a class="nav-link disabled">معطل</a>-->
-<!--          </li>-->
-        </ul>
-<!--        <form class="d-flex" role="search">-->
-<!--          <input class="form-control me-2" type="search" placeholder="بحث" aria-label="بحث">-->
-<!--          <button class="btn btn-outline-light" type="submit">بحث</button>-->
-<!--        </form>-->
-      </div>
-    </div>
-  </div>
-</header>
-<main>
-  <div class="container-fullwidth trader_container">
-    <div class="container">
-
-      <h4>رصد و پایش بازار بورس با هوش مصنوعی و الگوریتم های هوشمند</h4>
-      <div class="alert alert-success" role="alert">
-        <p>
-          پایش معاملات بورس تهران لحظه ای توسط ربات و برنامه نویسی هوشمند و فیلتر سهم های برتر و مستعد رشد. نمایش زنده اطلاعات بازار بورس و فرابورس و تغییرات شاخص و تعداد نمادهای مثبت و منفی, اطلاعات حق تقدم ها و همچنین گزارش بهترین قدرت خریدهای حقیقی و همچنین کد به کد های حقوقی به حقیقی و ورود پول هوشمند و ورود پول داغ و همچنین خرید گروهی و فروش گروهی و حجم مشکوک های ماهیانه و هفتگی و بیشترین ورود پول حقیقی و حقوقی و سهم های مثبت فردا و بیشترین ورود پول به صنعت و نمادهای صف خرید و صف فروش و بیشترین افزایش و کاهش قیمت روزانه و هفتگی
-        </p>
-      </div>
-      <div class="alert alert-info py-2">
-        با اتصال حساب کاربری به
-        <a class="btn btn-sm btn-primary" title="ربات تلگرام" target="_blank" href="" >ربات تلگرام</a>
-         از هشدارهای لحظه ای (جمع شدن صف فروش و خرید, پول هوشمند, کد به کد, اطلاعیه های کدال, پیام ناظر, حجم مشکوک, پول داغ و میلیاردی, خرید و فروش های گروهی و ...) و امکانات بیشتری بهره مند خواهید شد.
-        <a href="">اتصال به ربات</a>
-      </div>
-      <div class="row">
-          <div class="bd-example-snippet bd-code-snippet">
-              <a class="btn btn-sm btn-warning" href="user-multiple">دیدبان من</a>
-              <a class="btn btn-sm btn-primary" href="index.php?task=board">فیلترنویسی</a>
-              <a class="btn btn-sm btn-danger" href="index.php?task=hot_money">پول داغ</a>
-              <a class="btn btn-sm btn-success" href="vip">فیلترهای ویژه</a>
-              <a class="btn btn-sm btn-primary" href="stock-filter">فیلترهای کاربردی</a>
-              <a class="btn btn-sm btn-danger" href="stock-market-actors">تحرکات بازیگران</a>
-              <a class="btn btn-sm btn-dark" href="major-shareholders">درصدی ها</a>
-              <a class="btn btn-sm btn-info" href="charts">نمودارها</a>
-              <a class="btn btn-sm btn-primary" href="cashflow">نمودار نقدینگی</a>
-              <a class="btn btn-sm btn-warning" href="signal">تحرکات سهم</a>
-              <a class="btn btn-sm btn-success" href="symbol">سابقه معاملات</a>
-              <a class="btn btn-sm btn-primary" href="transactions">ریز معاملات</a>
-              <a class="btn btn-sm btn-info" href="pre-opening">پیش گشایش</a>
-              <a class="btn btn-sm btn-dark" href="stock-return">بازدهی تقویمی</a>
-              <a class="btn btn-sm btn-danger" href="index.php?task=fundamental_topsis">رتبه بندی بنیادی</a>
-              <a class="btn btn-sm btn-secondary" href="index.php?task=shareholders">سهامداران عمده</a>
-              <a class="btn btn-sm btn-warning" href="taghadom">حق تقدم</a>
-              <a class="btn btn-sm btn-danger" href="nazer">پیام ناظر</a>
-              <a class="btn btn-sm btn-info" href="index.php?task=reports">کدال</a>
-              <a class="btn btn-sm btn-warning" href="groups">صنایع</a>
-              <a class="btn btn-sm btn-dark" href="mysymbols">واچ لیست</a>
-              <a class="btn btn-sm btn-primary" href="index.php?buy_sell=خرید+گروهی&amp;task=hot_money">خرید گروهی</a>
-              <a class="btn btn-sm btn-secondary" href="index.php?task=best_pe">بهترین P/E</a>
-              <a class="btn btn-sm btn-danger" href="support-resistance">حمایت و مقاومت</a>
-              <a class="btn btn-sm btn-info" href="stock-float">شناوری سهام</a>
-              <a class="btn btn-sm btn-primary" href="marketcap">ارزش بازار</a>
-              <a class="btn btn-sm btn-danger" href="buy">خرید اشتراک</a>
-          </div>
-      </div>
-      <div class="row">
-            <!--<div class="row">
-                <h2 class="header_txt">اطلاعات بازار بورس تهران</h2>
-            </div>-->
-            <div class="row">
-            </div>
-            <div class="row">
-            </div>
-            <div class="row">
+                    <!--          <li class="nav-item dropdown">-->
+                    <!--            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+                    <!--              قائمة منسدلة-->
+                    <!--            </a>-->
+                    <!--            <ul class="dropdown-menu">-->
+                    <!--              <li><a class="dropdown-item" href="#">عمل</a></li>-->
+                    <!--              <li><a class="dropdown-item" href="#">عمل آخر</a></li>-->
+                    <!--              <li><hr class="dropdown-divider"></li>-->
+                    <!--              <li><a class="dropdown-item" href="#">شيء آخر هنا</a></li>-->
+                    <!--            </ul>-->
+                    <!--          </li>-->
+                    <!--          <li class="nav-item">-->
+                    <!--            <a class="nav-link disabled">معطل</a>-->
+                    <!--          </li>-->
+                </ul>
+                <!--        <form class="d-flex" role="search">-->
+                <!--          <input class="form-control me-2" type="search" placeholder="بحث" aria-label="بحث">-->
+                <!--          <button class="btn btn-outline-light" type="submit">بحث</button>-->
+                <!--        </form>-->
             </div>
         </div>
     </div>
-  </div>
+</header>
+<main>
+    <div class="container-fullwidth trader_container">
+        <div class="container">
 
-  <div class="album py-5 bg-light">
-      <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <h4>رصد و پایش بازار بورس با هوش مصنوعی و الگوریتم های هوشمند</h4>
+            <div class="alert alert-success" role="alert">
+                <p>
+                    پایش معاملات بورس تهران لحظه ای توسط ربات و برنامه نویسی هوشمند و فیلتر سهم های برتر و مستعد رشد. نمایش زنده اطلاعات بازار بورس و فرابورس و تغییرات شاخص و تعداد نمادهای مثبت و منفی, اطلاعات حق تقدم ها و همچنین گزارش بهترین قدرت خریدهای حقیقی و همچنین کد به کد های حقوقی به حقیقی و ورود پول هوشمند و ورود پول داغ و همچنین خرید گروهی و فروش گروهی و حجم مشکوک های ماهیانه و هفتگی و بیشترین ورود پول حقیقی و حقوقی و سهم های مثبت فردا و بیشترین ورود پول به صنعت و نمادهای صف خرید و صف فروش و بیشترین افزایش و کاهش قیمت روزانه و هفتگی
+                </p>
+            </div>
+            <div class="alert alert-info py-2">
+                با اتصال حساب کاربری به
+                <a class="btn btn-sm btn-primary" title="ربات تلگرام" target="_blank" href="" >ربات تلگرام</a>
+                از هشدارهای لحظه ای (جمع شدن صف فروش و خرید, پول هوشمند, کد به کد, اطلاعیه های کدال, پیام ناظر, حجم مشکوک, پول داغ و میلیاردی, خرید و فروش های گروهی و ...) و امکانات بیشتری بهره مند خواهید شد.
+                <a href="">اتصال به ربات</a>
+            </div>
+            <div class="row">
+                <div class="bd-example-snippet bd-code-snippet">
+                    <a class="btn btn-sm btn-warning" href="user-multiple">دیدبان من</a>
+                    <a class="btn btn-sm btn-primary" href="index.php?task=board">فیلترنویسی</a>
+                    <a class="btn btn-sm btn-danger" href="index.php?task=hot_money">پول داغ</a>
+                    <a class="btn btn-sm btn-success" href="vip">فیلترهای ویژه</a>
+                    <a class="btn btn-sm btn-primary" href="stock-filter">فیلترهای کاربردی</a>
+                    <a class="btn btn-sm btn-danger" href="stock-market-actors">تحرکات بازیگران</a>
+                    <a class="btn btn-sm btn-dark" href="major-shareholders">درصدی ها</a>
+                    <a class="btn btn-sm btn-info" href="charts">نمودارها</a>
+                    <a class="btn btn-sm btn-primary" href="cashflow">نمودار نقدینگی</a>
+                    <a class="btn btn-sm btn-warning" href="signal">تحرکات سهم</a>
+                    <a class="btn btn-sm btn-success" href="symbol">سابقه معاملات</a>
+                    <a class="btn btn-sm btn-primary" href="transactions">ریز معاملات</a>
+                    <a class="btn btn-sm btn-info" href="pre-opening">پیش گشایش</a>
+                    <a class="btn btn-sm btn-dark" href="stock-return">بازدهی تقویمی</a>
+                    <a class="btn btn-sm btn-danger" href="index.php?task=fundamental_topsis">رتبه بندی بنیادی</a>
+                    <a class="btn btn-sm btn-secondary" href="index.php?task=shareholders">سهامداران عمده</a>
+                    <a class="btn btn-sm btn-warning" href="taghadom">حق تقدم</a>
+                    <a class="btn btn-sm btn-danger" href="nazer">پیام ناظر</a>
+                    <a class="btn btn-sm btn-info" href="index.php?task=reports">کدال</a>
+                    <a class="btn btn-sm btn-warning" href="groups">صنایع</a>
+                    <a class="btn btn-sm btn-dark" href="mysymbols">واچ لیست</a>
+                    <a class="btn btn-sm btn-primary" href="index.php?buy_sell=خرید+گروهی&amp;task=hot_money">خرید گروهی</a>
+                    <a class="btn btn-sm btn-secondary" href="index.php?task=best_pe">بهترین P/E</a>
+                    <a class="btn btn-sm btn-danger" href="support-resistance">حمایت و مقاومت</a>
+                    <a class="btn btn-sm btn-info" href="stock-float">شناوری سهام</a>
+                    <a class="btn btn-sm btn-primary" href="marketcap">ارزش بازار</a>
+                    <a class="btn btn-sm btn-danger" href="buy">خرید اشتراک</a>
+                </div>
+            </div>
+            <div class="row">
+                <!--<div class="row">
+                    <h2 class="header_txt">اطلاعات بازار بورس تهران</h2>
+                </div>-->
+                <div class="row">
+                </div>
+                <div class="row">
+                </div>
+                <div class="row">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
 
 
-              <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: صورة مصغرة" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">صورة مصغرة</text></svg>
-                    <div class="card-body">
-                      <p class="card-text">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">عرض</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: صورة مصغرة" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">صورة مصغرة</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">عرض</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
+                                </div>
+                                <small class="text-muted">9 دقائق</small>
+                            </div>
                         </div>
-                        <small class="text-muted">9 دقائق</small>
-                      </div>
                     </div>
-                  </div>
-              </div>
+                </div>
 
 
 
 
-              <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: صورة مصغرة" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">صورة مصغرة</text></svg>
-                    <div class="card-body">
-                      <p class="card-text">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">عرض</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
+
+
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div id="chart">
                         </div>
-                        <small class="text-muted">9 دقائق</small>
-                      </div>
                     </div>
-                  </div>
-              </div>
+                </div>
+
+            </div>
+        </div>
 
 
-              <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: صورة مصغرة" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">صورة مصغرة</text></svg>
-                    <div class="card-body">
-                      <p class="card-text">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">عرض</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
-                        </div>
-                        <small class="text-muted">9 دقائق</small>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-
-              <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: صورة مصغرة" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">صورة مصغرة</text></svg>
-                    <div class="card-body">
-                      <p class="card-text">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">عرض</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
-                        </div>
-                        <small class="text-muted">9 دقائق</small>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-
-
-
-
-
-
-          </div>
-      </div>
-
-
-  </div>
+    </div>
 
 </main>
 
@@ -288,7 +248,241 @@
 
 </footer>
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<!--    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>-->
+<script src="../apexcharts-bundle/dist/apexcharts.js"></script>
+<!--    <script src="../apexcharts-bundle/dist/locales/fa.json"></script>-->
+<script>
 
-  </body>
+        var farsi_local = {
+          "name": "fa",
+          "options": {
+            "months": [
+              "فروردین",
+              "اردیبهشت",
+              "خرداد",
+              "تیر",
+              "مرداد",
+              "شهریور",
+              "مهر",
+              "آبان",
+              "آذر",
+              "دی",
+              "بهمن",
+              "اسفند"
+            ],
+            "shortMonths": [
+              "فرو",
+              "ارد",
+              "خرد",
+              "تیر",
+              "مرد",
+              "شهر",
+              "مهر",
+              "آبا",
+              "آذر",
+              "دی",
+              "بهمـ",
+              "اسفـ"
+            ],
+            "days": [
+              "یکشنبه",
+              "دوشنبه",
+              "سه شنبه",
+              "چهارشنبه",
+              "پنجشنبه",
+              "جمعه",
+              "شنبه"
+            ],
+            "shortDays": ["ی", "د", "س", "چ", "پ", "ج", "ش"],
+            "toolbar": {
+              "exportToSVG": "دانلود SVG",
+              "exportToPNG": "دانلود PNG",
+              "exportToCSV": "دانلود CSV",
+              "menu": "منو",
+              "selection": "انتخاب",
+              "selectionZoom": "بزرگنمایی انتخابی",
+              "zoomIn": "بزرگنمایی",
+              "zoomOut": "کوچکنمایی",
+              "pan": "پیمایش",
+              "reset": "بازنشانی بزرگنمایی"
+            }
+          }
+        };
+
+        var options = {
+            series: [
+                {
+                    name: "فروش حقوقی",
+                    data: [1.4, 2, 2.5, 1.5, 2.5, 2.8, 3.8, 4.6],
+
+
+                },
+                {
+                    name: "خرید حقوقی",
+                    data: [1.4, 2, 5, 1.5, 2.5, 2.8, 3.8, 7]
+                }
+            ],
+            colors: ["#FF0000", "#267B26"],
+            xaxis: {
+                categories: [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016],
+                style: {
+                    fontSize: '10px',
+                    fontFamily: 'Vazirmatn',
+                    direction: 'rtl',
+                },
+            },
+
+            yaxis: {
+
+                title: {
+                    align: 'left',
+                    style: {
+                        fontSize: '10px',
+                        fontFamily: 'Vazirmatn',
+                        direction: 'rtl',
+                    },
+                    text: 'میلیارد تومان'
+                },
+            },
+
+
+            stroke: {
+                curve: 'straight',
+                width: [1, 1],
+            },
+
+            plotOptions: {
+                bar: {
+                  columnWidth: "20%"
+                }
+            },
+            markers: {
+              size: 0,
+            },
+
+            fill: {
+                type: 'solid',
+                gradient: {
+                    shadeIntensity: 1,
+                    inverseColors: false,
+                    opacityFrom: 0.5,
+                    opacityTo: 0,
+                    stops: [0, 90, 100]
+                },
+            },
+
+            chart: {
+                locales: [farsi_local],
+                defaultLocale: 'fa',
+                type: 'line',
+
+                stacked: false,
+                height: 300,
+                zoom: {
+                    type: 'x',
+                    enabled: true,
+                    autoScaleYaxis: true
+                },
+
+                toolbar: {
+                    show: true,
+                    offsetX: 0,
+                    offsetY: 0,
+                    tools: {
+                          download: false,
+                          selection: true,
+                          zoom: true,
+                          zoomin: false,
+                          zoomout: false,
+                          pan: false,
+                          reset: true | '<img src="/static/icons/reset.png" width="20">',
+                          customIcons: []
+                    },
+
+                    autoSelected: 'zoom'
+                },
+
+            },
+            dataLabels: {
+              enabled: false
+            },
+
+            title: {
+              text: 'ارزش خرید و فروش حقوقی 60 سهم بزرگ',
+              style: {
+                    fontSize: '12px',
+                    fontFamily: 'Vazirmatn',
+              },
+              align: 'centre'
+            },
+
+
+
+            tooltip: {
+                  enabled: true,
+                  enabledOnSeries: undefined,
+                  shared: true,
+                  followCursor: false,
+                  intersect: false,
+                  inverseOrder: false,
+                  custom: undefined,
+                  fillSeriesColor: false,
+                  theme: false,
+                  style: {
+                    fontSize: '12px',
+                    fontFamily: 'Vazirmatn',
+                  },
+                  onDatasetHover: {
+                      highlightDataSeries: false,
+                  },
+                  x: {
+                      show: true,
+                      format: 'dd MMM',
+                      formatter: undefined,
+                  },
+                  y: {
+                      formatter: undefined,
+                      title: {
+                          formatter: (seriesName) => seriesName,
+                      },
+                  },
+                  z: {
+                      formatter: undefined,
+                      title: 'Size: '
+                  },
+                  marker: {
+                      show: true,
+                  },
+                  items: {
+                     display: 'flex',
+                  },
+                  fixed: {
+                      enabled: false,
+                      position: 'topRight',
+                      offsetX: 0,
+                      offsetY: 0,
+                  },
+            },
+
+            legend: {
+                show: true,
+                position: 'bottom',
+                horizontalAlign: 'centre',
+                onItemClick: {
+                    toggleDataSeries: true
+                },
+                onItemHover: {
+                  highlightDataSeries: true
+                },
+            },
+
+
+
+         };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+    </script>
+</body>
 </html>
