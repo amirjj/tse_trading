@@ -1,5 +1,15 @@
 .apexcharts-tooltip {
     direction: ltr;
+}
 
+body {
+    font-family: Vazirmatn;
+    font-weight: 400;
+    font-feature-settings: "ss01";
+}
 
+.btn-tag {
+    font-family: Vazirmatn;
+    font-size: 10px;
+    padding: 2px;
 }

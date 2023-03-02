@@ -58,12 +58,12 @@ var double_line_chart_options_template = {
     series: [
         {
             name: "فروش حقوقی",
-            data: [100, 100, 95, 79, 80, 91, 86, 91, 91, 84, 84, 72, 58, 59, 55, 59, 71, 74, 68, 78, 74, 73, 69, 44, 54, 57, 61, 59, 63, 58, 64, 64, 65, 71, 70, 73, 73, 76, 74, 63, 63, 65, 78, 78, 80, 64, 71, 72, 65, 54, 74, 76, 76, 79, 73, 80, 95, 112, 112, 115, 114, 111, 117, 126, 121, 130, 138, 133, 114, 102, 102, 103, 103, 108, 114, 129, 125, 128, 123, 112, 125, 121, 109, 120, 113, 124, 130, 140, 142, 138, 133, 134, 130, 135, 144, 156, 155, 155, 157, 147, 136, 130, 137, 148, 145, 146, 161, 171, 177, 192, 181, 169, 168, 177, 195, 198, 200, 203, 213, 192, 193, 192, 192, 198, 179, 179, 160, 172, 161, 162, 170, 157, 155, 169, 189, 183, 183, 182, 182, 166, 164, 162, 162, 156, 165, 160, 165, 141, 142, 142, 138, 154, 153, 144, 154, 147, 145, 129, 152, 156, 139, 147, 127, 128, 128, 128, 128, 137, 128, 129, 132, 134, 136, 137, 139, 122, 116, 95, 87, 84, 79, 67, 64, 69, 83, 77, 76, 73, 70, 70, 59, 59, 51, 49, 44, 43, 46, 58, 52, 54, 62, 60, 70, 72, 71, 77, 72, 91, 86, 93, 83, 73, 58, 66, 71, 77, 87, 87, 88, 89, 95, 97, 103, 101, 110, 102, 96, 84, 74, 64, 64, 59, 59, 54, 57, 56, 75, 75, 67, 67, 70],
+            data: [],
 
         },
         {
             name: "خرید حقوقی",
-            data: [1.4, 2, 5, 1.5, 2.5, 2.8, 3.8, 7]
+            data: [],
         },
 
     ],
@@ -75,7 +75,7 @@ var double_line_chart_options_template = {
             fontSize: '10px',
             fontFamily: 'Vazirmatn',
         },
-        tickAmount: undefined,
+        tickAmount: 8,
         tickPlacement: 'between',
         min: undefined,
         max: undefined,
@@ -84,7 +84,116 @@ var double_line_chart_options_template = {
         decimalsInFloat: undefined,
         overwriteCategories: undefined,
         position: 'bottom',
+        labels: {
+            show: true,
+            rotate: -45,
+            rotateAlways: false,
+            hideOverlappingLabels: false,
+            showDuplicates: false,
+            trim: false,
+            minHeight: undefined,
+            maxHeight: 120,
+            style: {
+                colors: [],
+                fontSize: '12px',
+                fontFamily: 'Vazirmatn',
+                fontWeight: 400,
+                cssClass: 'apexcharts-xaxis-label',
+            },
+            offsetX: 0,
+            offsetY: 20,
+            format: undefined,
+            formatter: undefined,
+            datetimeUTC: false,
+            datetimeFormatter: {
+                year: 'yyyy',
+                month: "MMM 'yy",
+                day: 'dd MMM',
+                hour: 'HH:mm',
+            },
+        },
 
+        group: {
+            groups: [],
+            style: {
+                colors: [],
+                fontSize: '12px',
+                fontWeight: 400,
+                fontFamily: undefined,
+                cssClass: ''
+            }
+        },
+
+        axisBorder: {
+            show: false,
+            color: '#78909C',
+            height: 0,
+            width: '100%',
+            offsetX: 0,
+            offsetY: 0
+        },
+
+        axisTicks: {
+            show: false,
+            borderType: 'solid',
+            color: '#78909C',
+            height: 6,
+            offsetX: 0,
+            offsetY: 0
+        },
+
+        title: {
+            text: undefined,
+            offsetX: 0,
+            offsetY: 0,
+            style: {
+                color: undefined,
+                fontSize: '12px',
+                fontFamily: 'Helvetica, Arial, sans-serif',
+                fontWeight: 600,
+                cssClass: 'apexcharts-xaxis-title',
+            },
+        },
+
+        crosshairs: {
+            show: true,
+            width: 1,
+            position: 'back',
+            opacity: 0.9,
+            stroke: {
+                color: '#b6b6b6',
+                width: 0,
+                dashArray: 0,
+            },
+            fill: {
+                type: 'solid',
+                color: '#B1B9C4',
+                gradient: {
+                    colorFrom: '#D8E3F0',
+                    colorTo: '#BED1E6',
+                    stops: [0, 100],
+                    opacityFrom: 0.4,
+                    opacityTo: 0.5,
+                },
+            },
+            dropShadow: {
+                enabled: false,
+                top: 0,
+                left: 0,
+                blur: 1,
+                opacity: 0.4,
+            },
+        },
+
+        tooltip: {
+            enabled: true,
+            formatter: undefined,
+            offsetY: 0,
+            style: {
+                fontSize: '10px',
+                fontFamily: 'Vazirmatn',
+            },
+        },
 
     },
     yaxis: {
@@ -237,7 +346,7 @@ var double_line_chart_options_template = {
         },
         x: {
             show: true,
-            format: 'dd MMM',
+            format: 'HH MM',
             formatter: undefined,
         },
         y: {
