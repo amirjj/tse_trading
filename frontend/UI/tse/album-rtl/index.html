@@ -208,18 +208,33 @@
 
 
 
+
                 <div class="col">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: صورة مصغرة" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">صورة مصغرة</text></svg>
-                        <div class="card-body">
-                            <p class="card-text">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">عرض</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
-                                </div>
-                                <small class="text-muted">9 دقائق</small>
-                            </div>
+                        <div id="taharokat_gheymati">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div id="hoghooghi_60_sahm">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div id="tedad_namad_mosbat_manfi">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div id="tedad_saf_kharid_foroosh">
                         </div>
                     </div>
                 </div>
@@ -227,15 +242,15 @@
 
 
 
-
-
-
                 <div class="col">
                     <div class="card shadow-sm">
-                        <div id="chart">
+                        <div id="arzash_sefaresh_roo_tablo">
                         </div>
                     </div>
                 </div>
+
+
+
 
             </div>
         </div>
@@ -254,10 +269,34 @@
 <script src="../apexcharts-bundle/dist/apexcharts.js"></script>
 <script src="../double_line_chart.js"></script>
 
-<script>
-
-        var chart = new ApexCharts(document.querySelector("#chart"), double_line_chart_options);
-        chart.render();
-    </script>
 </body>
 </html>
+
+<script>
+        var taharokat_gheymati_options = JSON.parse(JSON.stringify(double_line_chart_options_template));
+        console.log(taharokat_gheymati_options);
+        taharokat_gheymati_options.yaxis.title.text = '';
+        taharokat_gheymati_options.series[0].name = 'تحرک منفی';
+        taharokat_gheymati_options.series[1].name = 'تحرک مثبت';
+        taharokat_gheymati_options.title.text = 'نمودار تحرک قیمتی';
+
+        var chart_taharokat_gheymati = new ApexCharts(document.querySelector("#taharokat_gheymati"), taharokat_gheymati_options);
+        chart_taharokat_gheymati.render();
+
+
+<!--        var chart_hoghooghi_60_sahm = new ApexCharts(document.querySelector("#hoghooghi_60_sahm"), double_line_chart_options_template);-->
+<!--        chart_hoghooghi_60_sahm.render();-->
+
+
+<!--        var chart_tedad_namad_mosbat_manfi = new ApexCharts(document.querySelector("#tedad_namad_mosbat_manfi"), double_line_chart_options_template);-->
+<!--        chart_tedad_namad_mosbat_manfi.render();-->
+
+
+<!--        var chart_tedad_saf_kharid_foroosh = new ApexCharts(document.querySelector("#tedad_saf_kharid_foroosh"), double_line_chart_options_template);-->
+<!--        chart_tedad_saf_kharid_foroosh.render();-->
+
+
+<!--        var chart_arzash_sefaresh_roo_tablo = new ApexCharts(document.querySelector("#arzash_sefaresh_roo_tablo"), double_line_chart_options_template);-->
+<!--        chart_arzash_sefaresh_roo_tablo.render();-->
+
+    </script>
